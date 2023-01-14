@@ -1,0 +1,14 @@
+--- ./ssl/t1_lib.c.orig	1970-01-01 00:00:00.000000000 +0000
++++ ./ssl/t1_lib.c	1970-01-01 00:00:00.000000000 +0000
+@@ -180,10 +180,9 @@
+ /* The default curves */
+ static const uint16_t eccurves_default[] = {
+     29,                      /* X25519 (29) */
+-    23,                      /* secp256r1 (23) */
+-    30,                      /* X448 (30) */
+     25,                      /* secp521r1 (25) */
+     24,                      /* secp384r1 (24) */
++    23,                      /* secp256r1 (23) XXX compatiblity hack, re-evaluate later */
+ };
+ 
+ static const uint16_t suiteb_curves[] = {

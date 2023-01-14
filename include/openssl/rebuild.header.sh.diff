@@ -1,0 +1,7 @@
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ ./include/openssl/rebuild.header.sh	1970-01-01 00:00:00.000000000 +0000
+@@ -0,0 +1,4 @@
++sed -i '' -e "s/21 Jun 2022/LockSSL ( RELEASE:$LOCKSSL_RELEASE ) ( COMMIT:$(cat openssl/.commit | cut -c 1-12) )/g" opensslv.h
++sed -i '' -e "s/xx XXX xxxx/LockSSL ( RELEASE:$LOCKSSL_RELEASE ) ( COMMIT:$(cat openssl/.commit | cut -c 1-12) )/g" opensslv.h
++sed -i '' -e "s/\"1.1.1\"/\"111\"/g" opensslv.h
++sed -i '' -e "s/\"1.1\"/\"111\"/g" opensslv.h

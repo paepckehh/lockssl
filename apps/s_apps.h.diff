@@ -1,0 +1,11 @@
+--- ./apps/s_apps.h.orig	1970-01-01 00:00:00.000000000 +0000
++++ ./apps/s_apps.h	1970-01-01 00:00:00.000000000 +0000
+@@ -11,7 +11,7 @@
+ 
+ #include <openssl/ssl.h>
+ 
+-#define PORT            "4433"
++#define PORT            "443"
+ #define PROTOCOL        "tcp"
+ 
+ typedef int (*do_server_cb)(int s, int stype, int prot, unsigned char *context);
