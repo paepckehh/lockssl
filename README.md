@@ -29,7 +29,7 @@ will be identified via TLS Fingerprinting and targeted with this patch.
 # INFO
 
 If you do not need any TLS legacy compatiblity (eg. closed env) do not use
-this patch, just, lock your OpenSSL to TLS1.3-only mode and remove the session
+this patch, just lock your OpenSSL to TLS1.3-only mode and remove the session
 resume feature. 
 
 # INSTALL 
