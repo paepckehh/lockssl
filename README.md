@@ -11,7 +11,7 @@
 	- ECDHE-RSA-CHACHA20-POLY1305
 	- ECDHE-RSA-AES256-GCM-SHA384
 	- ECDHE-RSA-AES128-GCM-SHA256
-* locks & reoders kex (key exchange algo preferences)
+* locks & reoders kex (key exchange algo preferences):
         - X25519 (new fixed preference)
         - secp521r1 
         - secp384r1 
