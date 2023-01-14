@@ -20,17 +20,11 @@
 
 # EXPLICIT WARNING
 
-The reduced and reordered cipher/key-exchange agility may protect against 
-downgrade attacks, at the price of an very individual TLS Fingerprint.
-
-This does (intentionally!) NOT improve your privacy! Your Client can and
-will be identified via TLS Fingerprinting and targeted with this patch.
+The reduced and reordered cipher/key-exchange agility may protect against downgrade attacks, at the price of an very individual TLS Fingerprint.This does (intentionally!) NOT improve your privacy! Your Client can and will be identified via TLS Fingerprinting and targeted with this patch.
 
 # INFO
 
-If you do not need any TLS legacy compatiblity (eg. closed env) do not use
-this patch, just lock your OpenSSL to TLS1.3-only mode and remove the session
-resume feature. 
+If you do not need any TLS legacy compatiblity (eg. closed env) do not use this patch, just lock your OpenSSL to TLS1.3-only mode and remove the session resume feature. 
 
 # INSTALL 
 
