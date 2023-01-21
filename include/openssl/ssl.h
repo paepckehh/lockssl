@@ -1160,7 +1160,7 @@ DECLARE_PEM_rw(SSL_SESSION, SSL_SESSION)
 # define SSL_AD_INSUFFICIENT_SECURITY    TLS1_AD_INSUFFICIENT_SECURITY
 /* fatal */
 # define SSL_AD_INTERNAL_ERROR           TLS1_AD_INTERNAL_ERROR
-# define SSL_AD_USER_CANCELLED           TLS1_AD_USER_CANCELLED
+# define SSL_AD_USER_CANCELED           TLS1_AD_USER_CANCELED
 # define SSL_AD_NO_RENEGOTIATION         TLS1_AD_NO_RENEGOTIATION
 # define SSL_AD_MISSING_EXTENSION        TLS13_AD_MISSING_EXTENSION
 # define SSL_AD_CERTIFICATE_REQUIRED     TLS13_AD_CERTIFICATE_REQUIRED
@@ -2201,7 +2201,7 @@ int SSL_CTX_set_ct_validation_callback(SSL_CTX *ctx,
         ((void) SSL_CTX_set_validation_callback((ctx), NULL, NULL))
 
 /*
- * The validation type enumerates the available behaviours of the built-in SSL
+ * The validation type enumerates the available behaviors of the built-in SSL
  * CT validation callback selected via SSL_enable_ct() and SSL_CTX_enable_ct().
  * The underlying callback is a static function in libssl.
  */

@@ -182,7 +182,7 @@ static const uint16_t eccurves_default[] = {
     29,                      /* X25519 (29) */
     25,                      /* secp521r1 (25) */
     24,                      /* secp384r1 (24) */
-    23,                      /* secp256r1 (23) XXX compatiblity hack, re-evaluate later */
+    23,                      /* secp256r1 (23) XXX compatibility hack, re-evaluate later */
 };
 
 static const uint16_t suiteb_curves[] = {
@@ -1594,7 +1594,7 @@ static int tls12_sigalg_allowed(const SSL *s, int op, const SIGALG_LOOKUP *lu)
     unsigned char sigalgstr[2];
     int secbits;
 
-    /* See if sigalgs is recognised and if hash is enabled */
+    /* See if sigalgs is recognized and if hash is enabled */
     if (!tls1_lookup_md(lu, NULL))
         return 0;
     /* DSA is not allowed in TLS 1.3 */
@@ -2581,7 +2581,7 @@ static int tls12_get_cert_sigalg_idx(const SSL *s, const SIGALG_LOOKUP *lu)
     int sig_idx = lu->sig_idx;
     const SSL_CERT_LOOKUP *clu = ssl_cert_lookup_by_idx(sig_idx);
 
-    /* If not recognised or not supported by cipher mask it is not suitable */
+    /* If not recognized or not supported by cipher mask it is not suitable */
     if (clu == NULL
             || (clu->amask & s->s3->tmp.new_cipher->algorithm_auth) == 0
             || (clu->nid == EVP_PKEY_RSA_PSS
