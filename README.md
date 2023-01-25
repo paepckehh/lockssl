@@ -26,14 +26,6 @@ The reduced and reordered cipher/key-exchange agility may protect against downgr
 
 If you do not need any TLS legacy compatibility (eg. closed env) do not use this patch, just lock your OpenSSL to TLS1.3-only mode and remove the session resume feature. 
 
-# INSTALL 
-
-# SHOWTIME
-
-# TODO
-
-# DOCS
-
 # CONTRIBUTION
 
 Yes, Please! PRs Welcome! 
