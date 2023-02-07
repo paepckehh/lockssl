@@ -16,7 +16,7 @@
 	- secp521r1 
 	- secp384r1
 	- secp256r1 
-* 100% api compatible with OpenSSL_1_1_1 branch tip 
+* 100% api compatible with OpenSSL_1_1_1 branch (main/head)
 
 # EXPLICIT WARNING
 
