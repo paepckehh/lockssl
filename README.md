@@ -20,7 +20,7 @@
 
 # EXPLICIT WARNING
 
-The reduced and reordered cipher/key-exchange agility may protect against downgrade attacks and avoids version details leaking at the price of an very individual TLS Fingerprint.This does (intentionally!) NOT improve your privacy! Your Client can and will be identified via TLS Fingerprinting and targeted with this patch.
+The reduced and reordered cipher/key-exchange agility may protect against downgrade attacks and avoids version details leaking (protection against automated attack frameworks) at the price of an very individual TLS Fingerprint. This does (intentionally!) NOT improve your privacy! Your Client can and will be identified via TLS Fingerprinting and targeted with this patch.
 
 # INFO
 
